@@ -1,0 +1,12 @@
+[build]
+	publish = "public"
+	command = "hugo --gc --minify"
+
+[build.environment]
+	HUGO_VERSION = "0.84.4"
+
+[[redirects]]
+	from = "/hr"
+	to = "http://hrhrhrhr.com.tw"
+	status = 301
+	force = true
