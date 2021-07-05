@@ -2,8 +2,12 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Site"
 theme = "ivy"
+[permalinks]
+	"posts" = "/posts/:year/:month/:slug"
+
 
 [menu]
+
 	[[menu.main]]
 		  name = "Home"
 		  url = "/"
