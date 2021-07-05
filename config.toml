@@ -2,3 +2,9 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Site"
 theme = "ivy"
+
+[menu]
+	[[menu.main]]
+		  name = "Home"
+		  url = "/"
+			weight = 1
