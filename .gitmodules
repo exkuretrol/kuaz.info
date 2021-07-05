@@ -1,0 +1,3 @@
+[submodule "themes/ivy"]
+	path = themes/ivy
+	url = https://github.com/exkuretrol/hugo-ivy.git
