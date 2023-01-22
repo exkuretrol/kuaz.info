@@ -1,0 +1,6 @@
+include = ["i18n/**/*.toml", "config/**/*.toml"]
+
+[formatting]
+align_entries = true
+indent_string = "    "
+indent_entries = true
