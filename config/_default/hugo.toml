@@ -1,0 +1,22 @@
+baseURL                    = 'http://example.org/'
+languageCode               = 'zh-tw'
+title                      = 'Chiawei Chen | 陳家瑋'
+theme                      = 'ivy'
+enableEmoji                = true
+hasCJKLanguage             = true
+rssLimit                   = 10
+footnoteReturnLinkContents = '↩'
+defaultContentLanguage     = 'zh-tw'
+
+[permalinks]
+    posts = '/posts/:year/:month/:slug'
+
+[languages]
+[languages.zh-tw]
+    title        = '陳家瑋'
+    languageName = 'zh-tw'
+    weight       = 1
+[languages.en]
+    title        = 'Chiawei Chen'
+    languageName = 'en'
+    weight       = 2

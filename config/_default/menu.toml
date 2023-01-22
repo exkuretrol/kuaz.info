@@ -1,0 +1,17 @@
+[[main]]
+identifier = 'home'
+name = '首頁'
+url = '/'
+weight = 1
+
+[[main]]
+identifier = 'about'
+name = '關於'
+url = '/about'
+weight = 2
+
+[[main]]
+identifier = 'en'
+name = 'EN'
+url = '/en'
+weight = 3
