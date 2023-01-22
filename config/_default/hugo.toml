@@ -1,4 +1,4 @@
-baseURL                    = 'http://example.org/'
+baseURL                    = 'https://kuaz.info/'
 languageCode               = 'zh-tw'
 title                      = 'Chiawei Chen | 陳家瑋'
 theme                      = 'ivy'
