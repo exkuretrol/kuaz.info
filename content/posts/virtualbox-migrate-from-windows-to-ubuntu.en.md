@@ -1,7 +1,7 @@
 ---
 title: "Migrate from Windows VirtualBox to Ubuntu headless VirtualBox"
 date: 2021-08-18T22:13:55+08:00
-draft: true
+draft: false
 ---
 
 First, we import .ova file, which exported from Windows's VirtualBox.
