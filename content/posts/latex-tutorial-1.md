@@ -168,7 +168,7 @@ show_toc: true
 
 ### `extsizes`
 
-- CTAN 頁面：[CTAN: Package xecjk](https://www.ctan.org/pkg/extsizes)
+- CTAN 頁面：[CTAN: Package extsizes](https://www.ctan.org/pkg/extsizes)
 
 套件中提供了 8pt、9pt、10pt、11pt、12pt、14pt、17pt 與 20pt 可供使用。但，如果要與 `extsizes` 一起使用，需要使用上面提到的[手動載入 cTeX 套件](#ctex-cls)的方式，將它載入。
 
