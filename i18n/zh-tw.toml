@@ -1,0 +1,8 @@
+[home]
+    other = '首頁'
+
+[about]
+    other = '關於'
+
+[click_to_open]
+    other = "點擊展開"

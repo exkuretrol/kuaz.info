@@ -3,3 +3,6 @@
 
 [about]
     other = 'About'
+
+[click_to_open]
+    other = 'Click to Open'
