@@ -224,17 +224,17 @@ show_toc: true
 預設標題名稱所對應的預設值如下表所示，其中 `scheme = chinese` 的檔案選項只要套用 [cTeX 的文件類型](#ctex-cls)就會自動套用，而 `scheme = plain` 是 LaTeX 文件類型的預設值。
 
 
-| 標題名稱             | scheme = chinese | scheme = plain          |
-|----------------------|------------------|-------------------------|
-| part                 | {第,部分}        | `{\partname\space}`     |
-| chapter              | {第,章}          | {\chaptername\space}    |
-| section（beamer）    | {}               | {\sectionname\space}    |
-| section              | 同右             | {}                      |
-| subsection（beamer） | {}               | {\subsectionname\space} |
-| subsection           | 同右             | {}                      |
-| subsubsection        | 同右             | {}                      |
-| paragraph            | 同右             | {}                      |
-| subparagraph         | 同右             | {}                      |
+| 標題名稱             | scheme = chinese | scheme = plain            |
+| -------------------- | ---------------- | ------------------------- |
+| part                 | `{第,部分}`      | `{\partname\space}`       |
+| chapter              | `{第,章}`        | `{\chaptername\space}`    |
+| section（beamer）    | `{}`             | `{\sectionname\space}`    |
+| section              | 同右             | `{}`                      |
+| subsection（beamer） | `{}`             | `{\subsectionname\space}` |
+| subsection           | 同右             | `{}`                      |
+| subsubsection        | 同右             | `{}`                      |
+| paragraph            | 同右             | `{}`                      |
+| subparagraph         | 同右             | `{}`                      |
 
 > 補充說明：
 > `\partname` 原為 Part；
