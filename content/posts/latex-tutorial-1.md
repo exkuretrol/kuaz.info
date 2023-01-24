@@ -185,21 +185,21 @@ show_toc: true
 
 這裡會介紹各個中文標題中文化的部分，下表是可以設定的選項。可以根據自己的需求在 `\ctexset` 中使用 `<key> = <value>` 的方式設定。
 
-| 標題位置           | 選項             | 預設值   |
+| 標題位置           | 選項             |   預設值 |
 | :----------------- | :--------------- | -------: |
-| 目錄               | `contentsname`   | 目录     |
-| 圖目錄             | `listfigurename` | 插图     |
-| 表目錄             | `listtablename`  | 表格     |
-| 圖標號             | `figurename`     | 图       |
-| 表標號             | `tablename`      | 表       |
-| 摘要               | `abstractname`   | 摘要     |
-| 索引               | `indexname`      | 索引     |
-| 附錄               | `appendixname`   | 附录     |
+| 目錄               | `contentsname`   |     目录 |
+| 圖目錄             | `listfigurename` |     插图 |
+| 表目錄             | `listtablename`  |     表格 |
+| 圖標號             | `figurename`     |       图 |
+| 表標號             | `tablename`      |       表 |
+| 摘要               | `abstractname`   |     摘要 |
+| 索引               | `indexname`      |     索引 |
+| 附錄               | `appendixname`   |     附录 |
 | 參考文獻           | `bibname`        | 参考文献 |
-| 證明               | `proofname`      | 证明     |
+| 證明               | `proofname`      |     证明 |
 | 參考文獻（beamer） | `refname`        | 参考文献 |
-| 方程式             | `algorithmname`  | 算法     |
-| 接續字樣（beamer） | `continuation`   | （续）   |
+| 方程式             | `algorithmname`  |     算法 |
+| 接續字樣（beamer） | `continuation`   |   （续） |
 
 例如我們想要將目錄與圖目錄翻譯成中文，可以這樣做：
 
@@ -212,4 +212,78 @@ show_toc: true
 
 ## 文件標題樣式設定 {#document-style}
 
-TBD
+### 編號
+
+#### `.../name`
+
+- `name = {<前綴詞>, <後綴詞>}`
+- `name = {<前綴詞>}`
+
+如過要對章節名稱設定，可以使用上面兩種方式設定。一種是同時設定前綴詞與後綴詞，而另外一種只設前綴詞。`name` 的父階層需指定章節標題名稱。
+
+預設標題名稱所對應的預設值如下表所示，其中 `scheme = chinese` 的檔案選項只要套用 [cTeX 的文件類型](#ctex-cls)就會自動套用，而 `scheme = plain` 是 LaTeX 文件類型的預設值。
+
+
+| 標題名稱             | scheme = chinese | scheme = plain          |
+|----------------------|------------------|-------------------------|
+| part                 | {第,部分}        | `{\partname\space}`     |
+| chapter              | {第,章}          | {\chaptername\space}    |
+| section（beamer）    | {}               | {\sectionname\space}    |
+| section              | 同右             | {}                      |
+| subsection（beamer） | {}               | {\subsectionname\space} |
+| subsection           | 同右             | {}                      |
+| subsubsection        | 同右             | {}                      |
+| paragraph            | 同右             | {}                      |
+| subparagraph         | 同右             | {}                      |
+
+> 補充說明：
+> `\partname` 原為 Part；
+> `\chaptername` 原為 Chapter；
+> `\sectionname` 原為 `\translate{Section}`；
+> `\subsectionname` 原為 `\translate{Subsection}`。
+
+例如：
+
+```latex
+\ctexset{
+  section = {
+    name = {第,節}
+  }
+}
+```
+
+會使章節階層為 `\section` 標題套用「第 n 節」的格式設定。
+
+#### `.../number`
+
+- `/number = {<輸出數字的指令>}`
+
+變更輸出數字的格式。輸出數字的指令可以參考[這裡](https://www.overleaf.com/learn/latex/Counters#Accessing_and_printing_counter_values)。而載入 cTeX 時，也會自動載入 `zhnumber` 套件，此時新增了一個輸出數字指令 `\chinese`，可以幫助你輸出對應計數器中的數字用中文表示。例如：
+
+```latex
+\ctexset{
+  chapter = {
+    name = {第,章},
+    number = \chinese{chapter}
+  }
+}
+```
+
+假設目前章節的計數器為 3，上面的設定將會輸出「第三章」。
+
+### 格式
+
+#### `.../format`
+#### `.../nameformat`
+#### `.../numberformat`
+#### `.../titleformat`
+
+### 間距、縮排
+
+#### `.../beforeskip`
+#### `.../aftereskip`
+#### `.../fixskip`
+
+### 目錄、附錄
+
+#### `tocdepth`
