@@ -4,6 +4,7 @@ date: 2023-01-22T23:26:14+08:00
 draft: false
 slug: "latex-tutorial-part-ctex"
 show_toc: true
+math: true
 ---
 
 ## 引言 {#introduction}
@@ -273,10 +274,75 @@ show_toc: true
 
 ### 格式
 
+`cTex` 套件提供了 `format`、`numbername`、`nameformat` 與 `titleformat` 這幾個選項用來設定章節標題。下圖是各選項分別的作用區域示意圖。
+
+{{<katex>}}
+\begin{align*}
+\underbrace{ 
+  \overbrace{ 
+    \text{第}\space \underbrace{1}_{{\mathclap{\text{numberformat}}}} \space\text{章}
+  }^{\text{nameformat}} 
+  \quad
+  \overbrace{
+    \text{安裝 \LaTeX}
+  }^{\text{titlename}}
+}_{\text{format}}
+\end{align*}
+{{</katex>}}
+
 #### `.../format`
+
+{{<table title="aaa" id="aaab">}}
+| 標題名稱             | `scheme = chinese`          | `scheme = plain`       |
+| -------------------- | :-------------------------- | ---------------------- |
+| part（article）      | `\Large\bfseries\centering` | `\raggedright`         |
+| part（beamer）       | 同右                        | `\centering`           |
+| part                 | `\huge\bfseries\centering`  | `\centering`           |
+| chapter              | `\huge\bfseries\centering`  | `\raggedright`         |
+| section（beamer）    | 同右                        | `\centering`           |
+| section              | `\Large\bfseries\centering` | `\Large\bfseries`      |
+| subsection（beamer） | 同右                        | `\centering`           |
+| subsection           | 同右                        | `\large\bfseries`      |
+| subsubsection        | 同右                        | `\normalsize\bfseries` |
+| paragraph            | 同右                        | `\normalsize\bfseries` |
+| subparagraph         | 同右                        | `\normalsize\bfseries` |
+{{</table>}}
+
 #### `.../nameformat`
+
+| 標題名稱             | `scheme = chinese` | `scheme = plain`                                                      |
+| -------------------- | ------------------ | --------------------------------------------------------------------- |
+| part（article）      | `{}`               | `\Large\bfseries`                                                     |
+| part（beamer）       | 同右               | `\usebeamerfont{part name}  \usebeamercolor[fg]{part name}`             |
+| part                 | `{}`               | `\huge\bfseries`                                                      |
+| chapter              | `{}`               | `\huge\bfseries`                                                      |
+| section（beamer）    | 同右               | `\usebeamerfont{section name}  \usebeamercolor[fg]{section name}`       |
+| section              | 同右               | `{}`                                                                  |
+| subsection（beamer） | 同右               | `\usebeamerfont{subsection name}  \usebeamercolor[fg]{subsection name}` |
+| subsection           | 同右               | `{}`                                                                  |
+| subsubsection        | 同右               | `{}`                                                                  |
+| paragraph            | 同右               | `{}`                                                                  |
+| subparagraph         | 同右               | `{}`                                                                  |
+
 #### `.../numberformat`
+
+
+
 #### `.../titleformat`
+
+| 標題名稱             | `scheme = chinese` | `scheme = plain`                   |
+|----------------------|--------------------|------------------------------------|
+| part（article）      | `{}`               | `\huge\bfseries`                   |
+| part（beamer）       | 同右               | `\usebeamerfont{part title}`       |
+| part                 | `{}`               | `\Huge\bfseries`                   |
+| chapter              | `{}`               | `\Huge\bfseries`                   |
+| section（beamer）    | 同右               | `\usebeamerfont{section title}`    |
+| section              | 同右               | `{}`                               |
+| subsection（beamer） | 同右               | `\usebeamerfont{subsection title}` |
+| subsection           | 同右               | `{}`                               |
+| subsubsection        | 同右               | `{}`                               |
+| paragraph            | 同右               | `{}`                               |
+| subparagraph         | 同右               | `{}`                               |
 
 ### 間距、縮排
 
