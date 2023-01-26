@@ -10,5 +10,8 @@
 [about]
     other = '關於'
 
+[table_label]
+    other = '表'
+
 [click_to_open]
     other = "展開"
