@@ -28,64 +28,14 @@ math: true
 
 根據你的作業系統複製對應的程式碼，將檔案儲存成 `ctex-fontset-<name>.def` 並與要編譯的 tex 檔案放在同一個資料夾。
 
-> \<name\> 請替換成第一行 `\ProvidesExplFile` {} 中的檔案名稱。
+> 檔案請命名成第一行 `\ProvidesExplFile` {} 中的檔案名稱。
 
-{{<details title = "windows 版本">}}
-
-```latex
-\ProvidesExplFile{ctex-fontset-windows-tc.def}{\ExplFileDate}{0.0.1}{\ExplFileDescription}
-\ctex_fontset_case:nnn
-  { }
-  { }
-  {
-    \setCJKmainfont   { MingLiU } [ BoldFont = Microsoft~JhengHei , ItalicFont = DFKai-SB ]
-    \setCJKsansfont   { Microsoft~JhengHei } [ BoldFont = *~Bold ]
-    \setCJKmonofont   { MingLiU~Regular }
-    \setCJKfamilyfont { ming    } { MingLiU~Regular    }
-    \setCJKfamilyfont { zhhei   } { Microsoft~JhengHei }
-    \setCJKfamilyfont { zhkai   } { DFKai-SB           }
-  }
-\NewDocumentCommand \ming     { } { \CJKfamily { ming  } }
-\NewDocumentCommand \hei      { } { \CJKfamily { zhhei } }
-\NewDocumentCommand \kai      { } { \CJKfamily { zhkai } }
-
-```
+{{<details title="windows 版本" markdownify="false">}}
+{{<gist author="exkuretrol" hash="e178fefa4217f331f6c434d1713f8d50">}}
 {{</details>}}
 
-{{<details title="mac 版本">}}
-將程式碼儲存成 `ctex-fontset-macnew-tc.def` 並與 tex 檔案放在同一個資料夾。
-
-```latex
-\ProvidesExplFile{ctex-fontset-macnew-tc.def}{\ExplFileDate}{0.0.1}{\ExplFileDescription}
-\ctex_fontset_case:nnnn
-  { \ctex_fontset_error:n { mac } }
-  { }
-  { }
-  {
-    \setCJKmainfont { Songti~TC }
-      [
-        BoldFont       = Songti~TC~Bold,
-        ItalicFont     = Kaiti~TC,
-        BoldItalicFont = Kaiti~TC~Bold
-      ]
-    \setCJKsansfont { PingFang~TC }
-    \setCJKmonofont { Lantinghei~TC }
-    \setCJKfamilyfont { zhsong } { Songti~TC~Regular } [ BoldFont = Songti~TC~Bold ]
-    \setCJKfamilyfont { zhhei  } { Heiti~TC~Light    } [ BoldFont = Heiti~TC~Medium ]
-    \setCJKfamilyfont { zhpf   } { PingFang~TC       }
-    \setCJKfamilyfont { zhkai  } { Kaiti~TC          } [ BoldFont = Kaiti~TC~Bold ]
-    \setCJKfamilyfont { zhli   } { Baoli~TC          }
-    \setCJKfamilyfont { zhyuan } { Yuanti~TC~Light   } [ BoldFont = Yuanti~SC~Regular ]
-  }
-\NewDocumentCommand \song     { } { \CJKfamily { zhsong } }
-\NewDocumentCommand \hei      { } { \CJKfamily { zhhei  } }
-\NewDocumentCommand \fangsong { } { \CJKfamily { zhfs   } }
-\NewDocumentCommand \kai      { } { \CJKfamily { zhkai  } }
-\NewDocumentCommand \lishu    { } { \CJKfamily { zhli   } }
-\NewDocumentCommand \yuan     { } { \CJKfamily { zhyuan } }
-\NewDocumentCommand \pingfang { } { \CJKfamily { zhpf   } }
-  
-```
+{{<details title="mac 版本" markdownify="false">}}
+{{<gist author="exkuretrol" hash="316c6bbcc617a7eae3fa7d947dcd9446">}}
 {{</details>}}
 
 添加完成後，因為要使用自訂的字體，所以要先將自動抓取簡體中文字體的功能關閉。我們可以添加 `fontset = none` 的選項到 `cTeX` 的 class 中避免字體自動載入。
