@@ -29,15 +29,21 @@ The quadratic polynomial \\(ax^2 + bx + c \\) has discriminant \\(b^2 - 4 a c\\)
 
 #### display mode
 
+achieved this by [katex shortcode](https://github.com/exkuretrol/hugo-ivy/blob/main/layouts/shortcodes/katex.html).
+
 ```md
-$$ x_{1,2} = \frac{ - b \pm \sqrt{b^2 - 4ac} }{ 2a } $$
+{{</*katex*/>}}
+x_{1,2} = \frac{ - b \pm \sqrt{b^2 - 4ac} }{ 2a }
+{{</*/katex*/>}}
 ```
 
 will produce
 
 The quadratic formula for the roots of the quadratic polynomial:
 
-$$ x_{1,2} = \frac{ - b \pm \sqrt{b^2 - 4ac} }{ 2a } $$
+{{<katex>}}
+x_{1,2} = \frac{ - b \pm \sqrt{b^2 - 4ac} }{ 2a }
+{{</katex>}}
 
 ## table of contents
 
@@ -45,4 +51,18 @@ enable toc on page.
 
 ```yaml
 show_toc: true
+```
+
+## escaping hugo shortcode
+
+modify your shortcode from
+
+```md
+{{</*year*/>}}
+```
+
+to
+
+```md
+{{</*/*year*/*/>}}
 ```
