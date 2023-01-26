@@ -5,10 +5,16 @@
     weight     = 1
 
 [[main]]
+    identifier = 'posts'
+    name       = '文章'
+    url        = '/posts'
+    weight     = 2
+
+[[main]]
     identifier = 'memo'
     name       = '備忘'
     url        = '/memo'
-    weight     = 2
+    weight     = 3
 
 [[main]]
     identifier = 'about'
@@ -20,16 +26,4 @@
     identifier = 'zhtw'
     name       = '中文'
     url        = '../'
-    weight     = 100
-
-[[main]]
-    identifier = 'about'
-    name       = '關於'
-    url        = '/about'
-    weight     = 99
-
-[[main]]
-    identifier = 'en'
-    name       = 'EN'
-    url        = '/en'
     weight     = 100

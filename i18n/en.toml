@@ -1,11 +1,14 @@
 [home]
     other = 'Home'
 
-[about]
-    other = 'About'
+[posts]
+    other = 'Posts'
 
 [memo]
     other = 'Memo'
+
+[about]
+    other = 'About'
 
 [click_to_open]
     other = 'Click to Open'
