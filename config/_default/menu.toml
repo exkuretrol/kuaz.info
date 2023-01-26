@@ -5,13 +5,19 @@
     weight     = 1
 
 [[main]]
-    identifier = 'about'
-    name       = '關於我'
-    url        = '/about'
+    identifier = 'memo'
+    name       = '備忘'
+    url        = '/memo'
     weight     = 2
+
+[[main]]
+    identifier = 'about'
+    name       = '關於'
+    url        = '/about'
+    weight     = 99
 
 [[main]]
     identifier = 'en'
     name       = 'EN'
     url        = '/en'
-    weight     = 3
+    weight     = 100

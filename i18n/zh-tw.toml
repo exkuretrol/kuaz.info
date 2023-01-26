@@ -4,5 +4,8 @@
 [about]
     other = '關於'
 
+[memo]
+    other = '備忘'
+
 [click_to_open]
-    other = "點擊展開"
+    other = "展開"

@@ -4,5 +4,9 @@
 [about]
     other = 'About'
 
+[memo]
+    other = 'Memo'
+
 [click_to_open]
     other = 'Click to Open'
+
