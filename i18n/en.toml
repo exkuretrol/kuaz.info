@@ -10,6 +10,9 @@
 [about]
     other = 'About'
 
+[recipes]
+    other = 'Recipes'
+
 [table_label]
     other = 'Table'
 

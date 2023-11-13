@@ -10,6 +10,9 @@
 [about]
     other = '關於'
 
+[recipes]
+    other = '食譜'
+
 [table_label]
     other = '表'
 

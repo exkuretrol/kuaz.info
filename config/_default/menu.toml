@@ -23,6 +23,12 @@
     weight     = 99
 
 [[main]]
+    identifier = 'recipes'
+    name       = '食譜'
+    url        = '/recipes'
+    weight     = 4
+
+[[main]]
     identifier = 'en'
     name       = 'EN'
     url        = '/en'
