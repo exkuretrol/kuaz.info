@@ -17,6 +17,12 @@
     weight     = 3
 
 [[main]]
+    identifier = 'vitae'
+    name       = '簡歷'
+    url        = '/vitae'
+    weight     = 98
+
+[[main]]
     identifier = 'about'
     name       = '關於'
     url        = '/about'

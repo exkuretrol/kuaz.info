@@ -7,6 +7,9 @@
 [memo]
     other = 'Memo'
 
+[vitae]
+    other = 'Vitae'
+
 [about]
     other = 'About'
 
