@@ -12,46 +12,49 @@ math: true
 
 ## 研究興趣
 
-資料視覺化、網路技術、伺服器管理、虛擬化主機、Docker、GitOps
+網路相關技術、伺服器管理、容器化、GitOps、資料視覺化
 
 ## 教育背景
 
-- 2019.09 ~ 2025.06 就讀銘傳大學金融科技學院，應用統計與資料科學學系；銘傳大學資訊學院，資訊工程學系。
+- 2020.09 ~ 2024.06 就讀銘傳大學金融科技學院，應用統計與資料科學學系，同時雙主修銘傳大學資訊學院，資訊工程學系。
 
-## 工作經歷
-
-### 工作
-
-- 2025.08 ~ 至今 實習轉正職，在好物有限公司擔任 Django 工程師
+## 工作經驗
 
 ### 實習
 
-- 2021.12 跟著資工系李御璽老師一起到台灣郵政大數據準備室處理郵局的客戶清單。
+- 2024.03 ~ 2024.07 在好物有限公司擔任 Django 工程師。
 - 2022.09 ~ 2022.10 到明台產物保險擔任資料工程師，利用 SQL 語法處理客戶保單資料。
-- 2025.03 ~ 2025.07 在好物有限公司擔任 Django 工程師。
+- 2021.12 跟著資工系李御璽老師一起到台灣郵政大數據準備室用 SQL 語法撈取郵局的客戶清單。
 
-### 網站建設與管理
+### 工作
 
-- 2022 ~ 至今 維護銘傳大學[桃園行政處 WordPress 網站](https://taoyuan.mcu.edu.tw/)。
-- 2022 ~ 2025 維護銘傳大學應用統計與資料科學學系 WordPress 網站。
-- 2022.08 銘傳大學應用統計與資料科學學系伺服器網頁設計。
+- 2024.08 ~ 至今由實習轉正職，於好物有限公司擔任 Django 全端工程師
+- 2023 擔任探索性資料分析與視覺化、統計資料庫、網際網路資料庫教學助理
+- 2022 擔任應用模擬方法、統計資料庫、網站伺服器概論教學助理
+- 2021 擔任程式語言、探索性資料分析與視覺化、統計資料庫教學助理
+- 2020 擔任資料科學概論教學助理
 
-## 電腦能力
+### 網站建設與伺服器管理
 
-- 統計軟體：熟悉 R 與基礎的資料操作套件、SAS 與 SPSS 只有碰過一些基本的功能
+- 2025.01 ~ 至今協助銘傳大學應用統計與資料科學學系管理 aiWorks 工作站
+- 2023.03 ~ 2025 建置與維護銘傳大學[應用統計與資料科學學系 WordPress 網站](https://web.asis.mcu.edu.tw/)。
+- 2023.03 ~ 至今 建置與維護銘傳大學[桃園行政處 WordPress 網站](https://taoyuan.mcu.edu.tw/)。
+- 2022.08 ~ 2022.09 銘傳大學應用統計與資料科學學系伺服器網頁設計。
+
+## 技能
+
 - 語言：
   - 網頁設計相關：
-    1. 基礎：HTML、CSS、javascript、CSS、tailwindcss、TypeScript（不知道還剩下多少）
-    2. Node.js：Express、學習中的 React 與 Next.js、沒有非常熟悉的 jQuery
-    3. Python：Django、flask、socket.IO 有著做到一半的專案
-  - 其他語言：沒有學 struct 的 C、C++、Python
-- 應用程式：排版軟體 \\(\LaTeX\\)、資料庫 MySQL、shell Bash、或是 zsh、基本的 MakeFile、版本控制軟體 git
-- 作業系統：日常使用 MacOS，不過需要使用 Windows 的軟體如文書編輯軟體 Word 時，還是會進到家中的虛擬環境中使用。還常用其他 Linux 系統如：Ubuntu、alpine
-- Git：會基本的提交，提交遵循[慣例式提交規範](https://www.conventionalcommits.org/zh-hant/v1.0.0/?utm_source=pocket_saves)撰寫提交。有提出 pull request 的經驗。目前還不會處理複雜 conflicts 的問題。會利用 GitHub 的 workflow 做一些簡單的 CI / CD 自動化部屬
+    1. 前端：HTML、CSS、JavaScript、jQuery、Tailwind CSS
+    2. Framework：Django
+  - 其他語言：R、C、C++、LaTeX
+- 作業系統：Linux（Ubuntu / Debian）
+- 平台與工具：Docker、Git、GitOps、CI/CD、Ansible（初階）
+- 監控/維運：Grafana、Grafana Alloy、Prometheus
 
 ## 英文能力
 
-日常閱讀沒有問題、從上了大學之後就沒有再手寫過英文（想辦法彌補中），兩年前英文多益成績快 700，有點慘ＱＱ。
+TOEIC GREEN 675（2023年），具備閱讀技術文件能力。
 
 ## 作品
 
@@ -74,7 +77,7 @@ math: true
 1. Ledger：串接 Google SpreadSheet，將 Google 試算表當成資料庫來用，做簡單的記帳（[原始碼](https://github.com/exkuretrol/google-spreadsheet-ledger)）
 1. 資料結構作業展示：利用 pybind11 將 C++ 程式碼與 Python 做連結，可以讓使用者透過 Streamlit 的頁面互動工具與 C++ 程式碼互動（[網站](https://data-structure-kuaz.streamlit.app/)；[原始碼](https://github.com/exkuretrol/data-structure)）
 
-### Shiny
+### R-Shiny
 
 1. 口罩地圖：這是一個會將即時的成人 / 兒童口罩剩餘數（該資料集已下架）顯示在地圖上的應用程式。與大學組員共同完成（[網站](https://kuaz.shinyapps.io/R-Shiny-Mask-Map/)；[原始碼](https://github.com/exkuretrol/R-Shiny-Mask-Map)）
 2. 大溪農場資料視覺化：將物聯網的感測器的資料視覺化，以 Shiny for Python 撰寫（[網站](https://kuaz.shinyapps.io/daxi-farm-sensor/)；[原始碼](https://github.com/exkuretrol/daxi-farm-sensor)）
