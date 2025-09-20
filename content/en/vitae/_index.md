@@ -1,6 +1,5 @@
 ---
 title: "Curriculum Vitae"
-draft: true
 show_toc: true
 ---
 

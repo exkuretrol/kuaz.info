@@ -11,12 +11,6 @@
     weight     = 2
 
 [[main]]
-    identifier = 'memo'
-    name       = '備忘'
-    url        = '/en/memo'
-    weight     = 3
-
-[[main]]
     identifier = 'vitae'
     name       = '簡歷'
     url        = '/vitae'
