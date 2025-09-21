@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% 設定 style 與顏色
+\moderncvcolor{blue}  % 仍需指定，但會被覆寫
+\moderncvstyle{classic}
+
+% 邊界
+\usepackage[hmargin=1cm,vmargin=1cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.2} % adjust global spacing
+
+
+% 字體
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\defaultfontfeatures{Ligatures=TeX}
+\setCJKmainfont[
+  UprightFont = Noto Sans TC Regular,
+  BoldFont    = Noto Sans TC Bold
+]{Noto Sans TC}
+\xeCJKsetup{CJKglue=\hskip 0pt plus .08\baselineskip}
+
+
+% 標題改黑色
+\colorlet{firstnamecolor}{black}
+
+
+% 個人資料
+\name{陳家瑋}{}
+\phone[mobile]{+886~922~765~255}
+\email{kuaz@kuaz.info}
+\homepage{kuaz.info}
+\social[github]{exkuretrol}
+
+\begin{document}
+\makecvtitle
+
+% 專業簡介
+\section{專業簡介}
+\cvitem{}{具備 Linux 系統管理、伺服器維運與容器化經驗，曾參與 AI 計算平台與網站伺服器的建置與維護。熟悉 Docker、GitOps、CI/CD 與監控工具，並具備全端開發背景，能跨足系統穩定性與服務開發，致力於以自動化提升平台可靠性。}
+
+% 研究興趣
+\section{研究興趣}
+\cvitem{}{系統維運、自動化部署、伺服器管理、容器化、雲端平台}
+
+% 教育背景
+\section{學歷}
+\cventry{2020--2024}{應用統計與資料科學學系}{銘傳大學金融科技學院}{}{}{雙主修：資訊工程學系}
+
+% 工作經驗
+\section{工作經驗}
+\cventry{2024--至今}{Django 全端工程師}{好物有限公司}{}{}{
+\begin{itemize}
+  \item 開發與維護 Django Web 系統，涵蓋前端與後端功能。
+  \item 維護電商平台同步系統，並開發藥局總部內部管理系統。
+  \item 導入 CI/CD Pipeline，自動化部署與測試，將伺服器更新時間由 30 分鐘縮短至 5 分鐘。
+  \item 整合 GitHub Actions 與 Claude AI，自動審查 Pull Request 程式碼品質，縮短 Code Review 時間。
+  \item 基礎設施平台建置與維護：
+    \begin{itemize}
+      \item 部署 Proxmox 虛擬化環境，管理 LXC 容器資源。
+      \item 部署 Gitea 作為自建程式碼託管平台。
+      \item 佈署 Grafana、Grafana Alloy、Prometheus 建立監控與可觀測性平台。
+      \item 實作自動化流程，將服務部署至 staging 環境的 LXC。
+    \end{itemize}
+  \item 支援 Linux 伺服器環境管理，確保應用服務穩定。
+\end{itemize}
+}
+
+\cventry{2020--2023}{教學助理}{銘傳大學}{}{}{協助課程：資料科學概論、程式語言、探索性資料分析與視覺化、統計資料庫、網站伺服器概論、應用模擬方法、網際網路資料庫。支援學生實作與伺服器環境操作。}
+
+\cventry{2022}{資料工程實習生}{明台產物保險}{}{}{使用 SQL 清理與處理客戶保單資料，提升數據分析效率。}
+
+\cventry{2021}{專案實習}{台灣郵政大數據準備室}{}{}{撰寫 SQL 語法，協助建立客戶清單。}
+
+% 平台建置與維運經驗
+\section{平台建置與維運經驗}
+\cventry{2025--至今}{AI 平台維護}{}{}{}{管理銘傳大學應統系 aiWorks AI 訓練工作站，負責 Linux 系統維護、平台工作區容器建置，支援師生深度學習模型訓練。}
+
+\cventry{2022--至今}{網站伺服器建置}{}{}{}{建置並維護銘傳大學桃園行政處與統計系 WordPress 網站。}
+
+\cventry{2024--至今}{容器化與自動化}{}{}{}{使用 Docker、GitOps 與 Ansible 進行服務部署，搭配 Grafana/Prometheus 監控系統效能，提升維護效率與可靠性。}
+
+% 技能
+\section{技能}
+\cvitem{系統}{Linux (Ubuntu/Debian)、CI/CD (GitHub Actions)、Ansible（初階）}
+\cvitem{虛擬化}{Proxmox、LXC、Docker}
+\cvitem{版本控管}{Gitea、GitOps、GitHub Actions}
+\cvitem{監控}{Grafana、Grafana Alloy、Prometheus}
+\cvitem{程式}{Python、Shell Script、R、C、C++、\LaTeX}
+\cvitem{WebD}{Django、HTML、CSS、JavaScript、Tailwind CSS}
+
+% 語言
+\section{語言能力}
+\cvitemwithcomment{英文}{TOEIC 675 (2023)}{具備閱讀英文技術文件與 API 文件的能力}
+
+% References
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{李御璽}{%
+    專任教授 \\
+    銘傳大學資訊工程學系 \\
+    \href{mailto:leeys@mail.mcu.edu.tw}{leeys@mail.mcu.edu.tw}%
+  }
+  \cvcolumn{王薔惠}{%
+    助理教授 \\
+    銘傳大學金融科技應用學系 \\
+    \href{mailto:mandyw@mail.mcu.edu.tw}{mandyw@mail.mcu.edu.tw}%
+  }
+\end{cvcolumns}
+
+
+\end{document}
