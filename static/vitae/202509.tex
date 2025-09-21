@@ -5,9 +5,9 @@
 \moderncvstyle{classic}
 
 % 邊界
-\usepackage[hmargin=1cm,vmargin=1cm]{geometry}
-\usepackage{setspace}
-\setstretch{1.2} % adjust global spacing
+\usepackage[hmargin=0.4cm,vmargin=0.4cm]{geometry}
+%\usepackage{setspace}
+%\setstretch{1.2} % adjust global spacing
 
 
 % 字體
@@ -19,6 +19,8 @@
   UprightFont = Noto Sans TC Regular,
   BoldFont    = Noto Sans TC Bold
 ]{Noto Sans TC}
+
+% 行高
 \xeCJKsetup{CJKglue=\hskip 0pt plus .08\baselineskip}
 
 
@@ -32,6 +34,7 @@
 \email{kuaz@kuaz.info}
 \homepage{kuaz.info}
 \social[github]{exkuretrol}
+\photo[64pt][0pt]{picture} 
 
 \begin{document}
 \makecvtitle
@@ -50,7 +53,7 @@
 
 % 工作經驗
 \section{工作經驗}
-\cventry{2024--至今}{Django 全端工程師}{好物有限公司}{}{}{
+\cventry{2024--持續中}{Django 全端工程師}{好物有限公司}{}{}{
 \begin{itemize}
   \item 開發與維護 Django Web 系統，涵蓋前端與後端功能。
   \item 維護電商平台同步系統，並開發藥局總部內部管理系統。
@@ -69,45 +72,55 @@
 
 \cventry{2020--2023}{教學助理}{銘傳大學}{}{}{協助課程：資料科學概論、程式語言、探索性資料分析與視覺化、統計資料庫、網站伺服器概論、應用模擬方法、網際網路資料庫。支援學生實作與伺服器環境操作。}
 
-\cventry{2022}{資料工程實習生}{明台產物保險}{}{}{使用 SQL 清理與處理客戶保單資料，提升數據分析效率。}
-
-\cventry{2021}{專案實習}{台灣郵政大數據準備室}{}{}{撰寫 SQL 語法，協助建立客戶清單。}
+\cventry{2021--2022}{產業實習}{}{}{}{
+\begin{itemize}
+  \item \textbf{資料工程實習生，明台產物保險（2022.09--2022.10）}  
+        使用 SQL 清理與處理客戶保單資料，提升數據分析效率。
+  \item \textbf{專案實習，台灣郵政大數據準備室（2021.12）}  
+        撰寫 SQL 語法，協助建立客戶清單。
+\end{itemize}
+}
 
 % 平台建置與維運經驗
 \section{平台建置與維運經驗}
-\cventry{2025--至今}{AI 平台維護}{}{}{}{管理銘傳大學應統系 aiWorks AI 訓練工作站，負責 Linux 系統維護、平台工作區容器建置，支援師生深度學習模型訓練。}
+\cventry{2025--持續中}{AI 平台維護}{}{}{}{管理銘傳大學應統系 aiWorks AI 訓練工作站，負責 Linux 系統維護、平台工作區容器建置，支援師生深度學習模型訓練。}
 
-\cventry{2022--至今}{網站伺服器建置}{}{}{}{建置並維護銘傳大學桃園行政處與統計系 WordPress 網站。}
+\cventry{2022--持續中}{網站伺服器建置}{}{}{}{建置並維護銘傳大學桃園行政處與統計系 WordPress 網站。}
 
-\cventry{2024--至今}{容器化與自動化}{}{}{}{使用 Docker、GitOps 與 Ansible 進行服務部署，搭配 Grafana/Prometheus 監控系統效能，提升維護效率與可靠性。}
+\cventry{2024--持續中}{容器化與自動化}{}{}{}{使用 Docker、GitOps 與 Ansible 進行服務部署，搭配 Grafana/Prometheus 監控系統效能，提升維護效率與可靠性。}
 
 % 技能
 \section{技能}
-\cvitem{系統}{Linux (Ubuntu/Debian)、CI/CD (GitHub Actions)、Ansible（初階）}
-\cvitem{虛擬化}{Proxmox、LXC、Docker}
-\cvitem{版本控管}{Gitea、GitOps、GitHub Actions}
-\cvitem{監控}{Grafana、Grafana Alloy、Prometheus}
-\cvitem{程式}{Python、Shell Script、R、C、C++、\LaTeX}
-\cvitem{WebD}{Django、HTML、CSS、JavaScript、Tailwind CSS}
+\cvitem{系統自動化}{Linux (Ubuntu/Debian)、Ansible（初階）、CI/CD (GitHub Actions)}
+\cvitem{虛擬化容器}{Proxmox、VM、LXC、Docker}
+\cvitem{程式碼管理}{GitOps、Gitea、GitHub Actions}
+\cvitem{監控與維運}{Grafana、Grafana Alloy、Prometheus}
+\cvitem{程式語言}{Python、Shell Script、R、C/C++、\LaTeX}
+\cvitem{Web 開發}{Django、HTML、CSS、JavaScript、Tailwind CSS}
+
 
 % 語言
-\section{語言能力}
-\cvitemwithcomment{英文}{TOEIC 675 (2023)}{具備閱讀英文技術文件與 API 文件的能力}
+%\section{語言能力}
+%\cvitemwithcomment{英文}{TOEIC 675 (2023)}{具備閱讀英文技術文件與 API 文件的能力}
 
 % References
-\section{References}
-\begin{cvcolumns}
-  \cvcolumn{李御璽}{%
-    專任教授 \\
-    銘傳大學資訊工程學系 \\
-    \href{mailto:leeys@mail.mcu.edu.tw}{leeys@mail.mcu.edu.tw}%
-  }
-  \cvcolumn{王薔惠}{%
-    助理教授 \\
-    銘傳大學金融科技應用學系 \\
-    \href{mailto:mandyw@mail.mcu.edu.tw}{mandyw@mail.mcu.edu.tw}%
-  }
-\end{cvcolumns}
-
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{李御璽}{%
+%    專任教授 \\
+%    銘傳大學資訊工程學系 \\
+%    \href{mailto:leeys@mail.mcu.edu.tw}{leeys@mail.mcu.edu.tw}%
+%  }
+%  \cvcolumn{王薔惠}{%
+%    助理教授 \\
+%    銘傳大學金融科技應用學系 \\
+%    \href{mailto:mandyw@mail.mcu.edu.tw}{mandyw@mail.mcu.edu.tw}%
+%  }
+%  \cvcolumn{吳景煌}{%
+%    技術經理 \\
+%    好物有限公司 \\
+%    \href{mailto:kleskowu@jefec.com}{kleskowu@jefec.com}%
+%  }
+%\end{cvcolumns}
 
 \end{document}
